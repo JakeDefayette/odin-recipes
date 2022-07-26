@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://s0.2mdn.net/sadbundle/8540356362564795763/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="ad.size" content="width=300,height=250">
+
+	<link href="./style.css" rel="stylesheet">
+	<link rel="stylesheet" href="./sfa7jox.css">
+	<script src="./head.load.min.js"></script>
+
+	<script type="text/javascript">
+		var clickTag = "http://www.google.com";
+		// Atlas = "{{PUB_CLICKTHROUGH}}" || BridgeTrack = "[link]&[params]";
+	</script>
+	<title>Earn 5% cash back on your top eligible spend category up to $500 spent each billing cycle, 1% thereafter with the Citi Custom Cash Card. Earn $200 in cash back after qualifying purchases. Apply today.</title>
+<script type="text/javascript" src="./sapient_main.js"></script><script type="text/javascript" src="./sapient_util.js"></script><script type="text/javascript" src="./TweenLite.min.js"></script><script type="text/javascript" src="./TimelineLite.min.js"></script><script type="text/javascript" src="./EasePack.min.js"></script><script type="text/javascript" src="./CSSPlugin.min.js"></script><script type="text/javascript" src="./CSSRulePlugin.min.js"></script><script type="text/javascript" src="./skin1.js"></script><script type="text/javascript">
+    
+  (function() {
+    var MAX_URL_PARAM_LENGTH = 34;
+    var CLICK_X_URL_KEY = 'nx';
+    var CLICK_Y_URL_KEY = 'ny';
+    var CREATIVE_DIMENSIONS_KEY = 'dim';
+    var AD_URL_PARAM = '&adurl=';
+
+    var relegateNavigation = '';
+    var urlParamMap = {};
+
+    urlParamMap[CLICK_X_URL_KEY] = null;
+    urlParamMap[CLICK_Y_URL_KEY] = null;
+    urlParamMap[CREATIVE_DIMENSIONS_KEY] = null;
+
+    var handleClickTagMessage = function(e) {
+      try {
+        var eventData = JSON.parse(e.data);
+      } catch (err) {
+        return;
+      }
+      if (eventData.isInitClickTag) {
+        if (eventData.clickTags) {
+          for (var i = 0; i < eventData.clickTags.length; i++) {
+            var clkTag = eventData.clickTags[i];
+            window[clkTag.name] = clkTag.url;
+          }
+        } else if (eventData.clickTag) {
+          window.clickTag = eventData.clickTag;
+        }
+        relegateNavigation = eventData.relegateNavigation;
+      }
+    };
+
+    var storeClickCoordinates = function(e) {
+      urlParamMap[CLICK_X_URL_KEY] = Math.round(e.clientX);
+      urlParamMap[CLICK_Y_URL_KEY] = Math.round(e.clientY);
+    };
+
+    var getCreativeDimensions = function() {
+      return window.innerWidth + 'x' + window.innerHeight;
+    }
+
+    var getExitClickParams = function(e) {
+      urlParamMap[CREATIVE_DIMENSIONS_KEY] = getCreativeDimensions();
+
+      var exitParams = '';
+      for (var key in urlParamMap) {
+        exitParams += '&' + key + '=';
+        if (urlParamMap[key] !== null) {
+          exitParams += urlParamMap[key];
+        }
+      }
+      return exitParams;
+    }
+
+    var appendExitClickParams = function(url) {
+      var adUrlIndex = url.toLowerCase().indexOf(AD_URL_PARAM);
+      var paramsToBeAdded = getExitClickParams();
+      if (adUrlIndex > -1 && paramsToBeAdded.length <= MAX_URL_PARAM_LENGTH) {
+        url = url.substr(0, adUrlIndex) + paramsToBeAdded +
+          url.substr(adUrlIndex);
+      };
+      return url;
+    };
+
+    if (open.call) {
+      window.open = function(open) {
+        return function(url, name, features) {
+          url = appendExitClickParams(url);
+          if (relegateNavigation === 'parent') {
+            var message = {'clickTag': url, 'isPostClickTag': true};
+            parent.postMessage(JSON.stringify(message), '*');
+          } else {
+            var args = [url, name];
+            if (features) {
+              args.push(features);
+            }
+            open.apply(window, args);
+          }
+        };
+      }(window.open);
+    }
+
+    if (window.addEventListener) {
+      window.addEventListener(
+          'message', handleClickTagMessage, false);
+      window.addEventListener('mousedown', storeClickCoordinates, true);
+    } else {
+      window.attachEvent('onmessage', handleClickTagMessage);
+    }
+  })();
+    
+  </script></head>
+
+<body>
+	<main id="mainContainer" class="containerWidth containerHeight font_bold" style="visibility: inherit; opacity: 1;">
+		<div id="bannerContainer" class="bannerWidth bannerHeight" style="visibility: inherit; opacity: 1;">
+			<div class="bg1 bannerWidth">
+				<div id="bg1" style="transform: matrix(1, 0, 0, 1, 0, 0); visibility: inherit; opacity: 1;"><img src="./img_bg1.jpg" alt="" width="600" height="1084"></div>
+			</div>
+
+			<button id="controls" aria-label="re-play banner animation" alt="replay" style="visibility: inherit; opacity: 1;">
+				<img src="./img_replay.svg" aria-hidden="true" alt="">
+			</button>
+			
+			
+			<div id="frame01" class="bannerWidth bannerHeight" style="visibility: inherit; opacity: 1;">
+				<div id="card" style="visibility: hidden; opacity: 0;"><img src="./img_card.png" alt="" width="132" height="84"></div>
+				<!-- <div id="card_cont">
+					<div class="gleam2"></div>
+				</div> -->
+
+				<div id="copy1" class="unselectable" style="visibility: hidden; opacity: 0; transform: matrix(1, 0, 0, 1, 0, -20);">get<br>rewarded<br>for being<br>you</div>
+				<div id="copy2" class="unselectable" style="visibility: hidden; opacity: 0; transform: matrix(1, 0, 0, 1, 0, -20);">with the<br>Citi<br>Custom<br>Cash<sup>SM</sup><br>Card</div>
+				<div id="copy3" class="unselectable" style="visibility: hidden; opacity: 0; transform: matrix(1, 0, 0, 1, 0, -20);">5% cash<br>back on your<br>top eligible<br>spend<br>category<br><span class="copy3" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">up to $500 spent<br>each billing cycle,<br>1% thereafter</span></div>
+				<div id="copy4" class="unselectable" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">earn $200<br>in cash back<br><span class="copy4" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">after qualifying<br>purchases</span></div>
+				<div id="copy5" class="unselectable" style="visibility: hidden; opacity: 0;">earn a<br>$200 cash<br>back bonus</div>
+				<div id="copy6" class="unselectable" style="visibility: hidden; opacity: 0;">when you spend<br>$750 on qualifying<br>purchases</div>
+				<div id="rate" class="unselectable" style="visibility: hidden; opacity: 0;">5<span class="per">%</span></div>
+			</div>
+
+			
+			<a id="cta1" class="cta font_bold" href="javascript:void(0);" onclick="window.open(clickTag);" aria-label="Earn 5% cash back on your top eligible spend category up to $500 spent each billing cycle, 1% thereafter with the Citi Custom Cash Card. Earn $200 in cash back after qualifying purchases. Apply today." style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+			<div id="ctaBG" style="visibility: inherit; opacity: 1;">
+				<div class="gleam" style="transform: matrix(0.90631, 0.42262, -0.42262, 0.90631, 0, 0);"></div>
+			</div>
+			<div id="cta1Text" class="ctaFontContainer unselectable" style="visibility: inherit; opacity: 1;">Apply Today</div>
+		</a>
+		
+		<div id="legal" class="font_regular unselectable" style="visibility: inherit; opacity: 1;">Citi Custom Cash<sup>SM</sup> Card</div>
+		<div id="img_logo" role="img" aria-label="Citibank logo" style="visibility: inherit; opacity: 1;"><div id="img_logo_src" style="visibility: inherit; opacity: 1;"></div></div>
+		
+
+			<a id="bgExit" class="bannerWidth bannerHeight border" href="javascript:void(0);" onclick="window.open(clickTag);" aria-hidden="true" tabindex="-1" style="visibility: inherit; opacity: 1;">ad exit</a>
+
+
+			
+		</div>
+	</main>
+
+	<!-- Use in page with <base> and svg gradients -->
+	<!--<script>!function(){try{var l=location.href.replace(/#.*$/,""),e=document.querySelectorAll("path,ellipse");for(var t=0,o=e.length;o>t;t++){var r=e[t];var c=r.getAttribute("fill"),a=c.replace(/url\((['"]?)#/i,"url($1"+l+"#");c!==a&&r.setAttribute("fill",a)}}catch(i){}}();
+    </script>-->
+
+	<script>
+		window.onload = function() {
+		document.getElementById("controls").focus();
+		};
+
+		head.ready(document, function () {
+			head.load("sapient_main.js");
+		});
+	</script>
+	<noscript>
+		<style>
+			#mainContainer {
+				display: none
+			}
+		</style>
+		<a href="javascript:window.open(window.clickTag)">
+			<img border="0" alt="Backup Image" src="backup.jpg" />
+		</a>
+	</noscript>
+
+
+</body></html>
